@@ -10,16 +10,11 @@ let package = Package(
             name: "MedalliaPackage",
             targets: ["MedalliaPackage"]),
     ],
-    dependencies: [
-        
-    ],
+    dependencies: [],
     targets: [
         .binaryTarget(
-                            name: "MedalliaPackage",
-                            path: "artifacts/MedalliaDigitalSDK.xcframework"
-                        ),
-        .testTarget(
-            name: "MedalliaPackageTests",
-            dependencies: ["MedalliaPackage"]),
+            name: "MedalliaPackage",
+            path: "MedalliaPackage.xcframework"
+        ),        
     ]
 )
